@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="842.0" style="-fx-background-color: rgb(93,16,73);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt2022_30423_chete_doru_assignment_2.BusinessLogic.SimulationManager">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-22.0" layoutY="-2.0" prefHeight="33.0" prefWidth="864.0" style="-fx-background-color: rgb(78,13,58);" text="Queue Management" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="no_of_clients" layoutX="138.0" layoutY="55.0" prefHeight="33.0" prefWidth="65.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.14912280440330505" green="0.1274907886981964" blue="0.1274907886981964" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <Label fx:id="log_text" alignment="TOP_LEFT" layoutX="12.0" layoutY="161.0" prefHeight="260.0" prefWidth="818.0" style="-fx-background-color: rgb(256,256,256); -fx-border-color: rgb(78,13,58); -fx-border-width: 3; -fx-wrap-text: true;" text="This is the log field" textFill="#5d1049">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="60.0" prefHeight="23.0" prefWidth="124.0" text="Number of clients:" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="111.0" prefHeight="23.0" prefWidth="124.0" text="Number of queues:" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="no_of_queues" layoutX="138.0" layoutY="106.0" prefHeight="33.0" prefWidth="65.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.14912280440330505" green="0.1274907886981964" blue="0.1274907886981964" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <Label layoutX="229.0" layoutY="60.0" prefHeight="23.0" prefWidth="108.0" text="Min. arrival time:" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="min_arrival_time" layoutX="343.0" layoutY="55.0" prefHeight="33.0" prefWidth="65.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.14912280440330505" green="0.1274907886981964" blue="0.1274907886981964" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <Label layoutX="229.0" layoutY="111.0" prefHeight="23.0" prefWidth="114.0" text="Max. arrival time:" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="max_arrival_time" layoutX="343.0" layoutY="106.0" prefHeight="33.0" prefWidth="65.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.14912280440330505" green="0.1274907886981964" blue="0.1274907886981964" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <Label layoutX="430.0" layoutY="60.0" prefHeight="23.0" prefWidth="114.0" text="Min. service time:" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="111.0" prefHeight="23.0" prefWidth="114.0" text="Max. service time:" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="min_service_time" layoutX="547.0" layoutY="55.0" prefHeight="33.0" prefWidth="65.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.14912280440330505" green="0.1274907886981964" blue="0.1274907886981964" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <TextField fx:id="max_service_time" layoutX="547.0" layoutY="106.0" prefHeight="33.0" prefWidth="65.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.14912280440330505" green="0.1274907886981964" blue="0.1274907886981964" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <Label layoutX="646.0" layoutY="60.0" prefHeight="23.0" prefWidth="114.0" text="Simulation time:" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="simulation_time" layoutX="760.0" layoutY="55.0" prefHeight="33.0" prefWidth="65.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.14912280440330505" green="0.1274907886981964" blue="0.1274907886981964" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <Button fx:id="simulation_start_btn" layoutX="646.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#startSimulation" prefHeight="33.0" prefWidth="181.0" text="Start simulation" textFill="#5d1049">
+         <font>
+            <Font name="Tahoma Bold" size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
